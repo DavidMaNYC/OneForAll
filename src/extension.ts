@@ -81,12 +81,12 @@ export function activate(context: vscode.ExtensionContext) {
 		if (activeSelection?.isEmpty) {
 		  return "";
 		}
-		const selStartoffset = vscode.window.activeTextEditor?.document.offsetAt(
-		  activeSelection.start
-		);
-		const selEndOffset = vscode.window.activeTextEditor?.document.offsetAt(
-		  activeSelection.end
-		);
+		const selStartoffset = (()=>{if(activeSelection){return vscode.window.activeTextEditor?.document.offsetAt(
+			activeSelection.start
+		);}else{return undefined;}})();
+		const selEndOffset = (()=>{if(activeSelection){return vscode.window.activeTextEditor?.document.offsetAt(
+			activeSelection.end
+		);}else{return undefined;}})();
 		let selectedText = documentText.slice(selStartoffset, selEndOffset).trim();
 	  
 		return `${selectedText.replace(/\s\s+/g, " ")} ${language}`;
