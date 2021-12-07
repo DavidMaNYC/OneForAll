@@ -1,10 +1,21 @@
 {
-  "name": "oneforall",
+  "name": "OneForAll",
   "displayName": "OneForAll",
   "description": "Easier way to look up things.",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "DavidMa",
   "engines": {
     "vscode": "^1.62.0"
+  },
+  "author": {
+    "name": "DavidMaNYC",
+    "url": "https://github.com/DavidMaNYC"
+  },
+  "icon": "resources/new-logo.png",
+  "homepage": "https://github.com/DavidMaNYC/OneForAll",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidMaNYC/OneForAll"
   },
   "categories": [
     "Other"
