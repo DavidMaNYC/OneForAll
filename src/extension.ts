@@ -11,7 +11,6 @@ export function activate(context: vscode.ExtensionContext) {
 		  webSearch(link);
 		}
 	  ));
-
 	  context.subscriptions.push(vscode.commands.registerTextEditorCommand(
 		"extension.google",
 		()=>{
@@ -19,7 +18,6 @@ export function activate(context: vscode.ExtensionContext) {
 		  webSearch(link);
 		}
 	  ));
-	
 	  context.subscriptions.push(vscode.commands.registerTextEditorCommand(
 		"extension.bing",
 		()=>{
@@ -27,7 +25,6 @@ export function activate(context: vscode.ExtensionContext) {
 		  webSearch(link);
 		}
 	  ));
-	
 	  context.subscriptions.push(vscode.commands.registerTextEditorCommand(
 		"extension.yahoo",
 		()=>{
@@ -35,7 +32,6 @@ export function activate(context: vscode.ExtensionContext) {
 		  webSearch(link);
 		}
 	  ));
-	
 	  context.subscriptions.push(vscode.commands.registerTextEditorCommand(
 		"extension.baidu",
 		()=>{
@@ -43,7 +39,6 @@ export function activate(context: vscode.ExtensionContext) {
 		  webSearch(link);
 		}
 	  ));
-	
 	  context.subscriptions.push(vscode.commands.registerTextEditorCommand(
 		"extension.yandex",
 		()=>{
